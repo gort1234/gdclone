@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Geometry Dash Replica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game-container">
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="hud">
+    <div id="progressBarWrap">
+      <div id="progressBarFill"></div>
+    </div>
+    <div id="percentText">0%</div>
+    <div id="attemptText">Attempt 1</div>
+  </div>
+
+  <div id="startScreen" class="overlay">
+    <h1 class="title">GEOMETRY DASH</h1>
+    <p class="subtitle">replica</p>
+    <button id="startBtn">TAP / CLICK / SPACE TO START</button>
+  </div>
+
+  <div id="deathScreen" class="overlay hidden">
+    <h1 class="deathTitle">X</h1>
+    <p class="deathPercent">0%</p>
+    <button id="retryBtn">RETRY</button>
+  </div>
+
+  <div id="winScreen" class="overlay hidden">
+    <h1 class="winTitle">LEVEL COMPLETE!</h1>
+    <button id="winRetryBtn">PLAY AGAIN</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
